@@ -17,4 +17,4 @@ def get_partitions(outfile, infile):
 					nf.write("sub_" + str(counter) + "_pos" + str(i+1) + " = " + str(int(pos1) + i) + "-" + pos2 + "\\3;" + "\n")
 
 # Run function with specified input, output file names.
-get_partitions('pf.cfg', 'partition.txt')
+get_partitions('partition_finder.cfg', 'partition.txt')
