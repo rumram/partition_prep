@@ -4,6 +4,7 @@ def get_partitions(outfile, infile):
 	with open(outfile, 'w') as nf:
 		lines = open(infile, 'r').read().splitlines()
 		counter = 0
+		nf.write("[data_blocks]" + "\n")
 		for line in lines:
 			counter += 1
 			lname = line.split("\t")[0]
